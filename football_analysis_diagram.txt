@@ -1,0 +1,55 @@
+digraph {
+	1 [label="Data Collection & Importing" fillcolor=lightblue shape=box style=filled]
+	2 [label="Preprocessing & Data Cleaning" fillcolor=lightblue shape=box style=filled]
+	3 [label="Data Structuring & Transformation" fillcolor=lightblue shape=box style=filled]
+	4 [label="Exploratory Data Analysis (EDA)" fillcolor=lightblue shape=box style=filled]
+	5 [label="Predictive Modeling (ML)" fillcolor=lightblue shape=box style=filled]
+	6 [label="Visualization (Tableau)" fillcolor=lightblue shape=box style=filled]
+	"2a" [label="Handling Missing Values" fillcolor=lightgray shape=ellipse style=filled]
+	"2b" [label="Standardizing Data Types" fillcolor=lightgray shape=ellipse style=filled]
+	"2c" [label="Removing Outliers & Duplicates" fillcolor=lightgray shape=ellipse style=filled]
+	"2d" [label="Feature Engineering" fillcolor=lightgray shape=ellipse style=filled]
+	"3a" [label="Aggregating Market Value per Club" fillcolor=lightgray shape=ellipse style=filled]
+	"3b" [label="Comparing Positional Worth" fillcolor=lightgray shape=ellipse style=filled]
+	"3c" [label="Structuring Contract Terms" fillcolor=lightgray shape=ellipse style=filled]
+	"3d" [label="Computing Team Strength" fillcolor=lightgray shape=ellipse style=filled]
+	"4a" [label="Identifying Top Players & Clubs" fillcolor=lightgray shape=ellipse style=filled]
+	"4b" [label="Analyzing Market Trends by Age" fillcolor=lightgray shape=ellipse style=filled]
+	"4c" [label="Studying League/Nationality Distribution" fillcolor=lightgray shape=ellipse style=filled]
+	"4d" [label="Comparing Club Spending vs Performance" fillcolor=lightgray shape=ellipse style=filled]
+	"5a" [label="Predicting Player Market Value" fillcolor=lightgray shape=ellipse style=filled]
+	"5b" [label="Improving Accuracy (Random Forest, XGBoost)" fillcolor=lightgray shape=ellipse style=filled]
+	"5c" [label="Analyzing Feature Importance" fillcolor=lightgray shape=ellipse style=filled]
+	"5d" [label="Evaluating Models (MAE, R-Squared)" fillcolor=lightgray shape=ellipse style=filled]
+	"6a" [label="Top Players & Clubs (Bar Chart)" fillcolor=lightgray shape=ellipse style=filled]
+	"6b" [label="Market Value Distribution (Bubble Chart)" fillcolor=lightgray shape=ellipse style=filled]
+	"6c" [label="Player Nationality Distribution (Geo Map)" fillcolor=lightgray shape=ellipse style=filled]
+	"6d" [label="Positional Value Comparison (Heatmap)" fillcolor=lightgray shape=ellipse style=filled]
+	"6e" [label="Club Market Value Growth vs Spending (Line Chart)" fillcolor=lightgray shape=ellipse style=filled]
+	1 -> 2
+	2 -> 3
+	3 -> 4
+	4 -> 5
+	5 -> 6
+	2 -> "2a"
+	2 -> "2b"
+	2 -> "2c"
+	2 -> "2d"
+	3 -> "3a"
+	3 -> "3b"
+	3 -> "3c"
+	3 -> "3d"
+	4 -> "4a"
+	4 -> "4b"
+	4 -> "4c"
+	4 -> "4d"
+	5 -> "5a"
+	5 -> "5b"
+	5 -> "5c"
+	5 -> "5d"
+	6 -> "6a"
+	6 -> "6b"
+	6 -> "6c"
+	6 -> "6d"
+	6 -> "6e"
+}
